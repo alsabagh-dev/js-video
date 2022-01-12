@@ -14,3 +14,11 @@ btn.addEventListener('click', () => {
         video.play();
     }
 });
+
+// PreLoader
+const preloader = document.querySelector('.preloader');
+
+window.addEventListener('load', () => {
+    // delayed on purpose to see my awesome preloader :)
+    setTimeout(()=>{preloader.classList.add('hide-preloader')}, 1000);
+});
